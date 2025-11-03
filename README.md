@@ -35,7 +35,6 @@ It takes a **4-bit binary (BCD/HEX) input** from slide switches and displays the
 | `constraints.xdc` | XDC file mapping FPGA pins for switches and 7-segment connections |
 | `waveform.png` | Simulation waveform result from Vivado |
 | `board_result.png` | Annotated Nexys4 DDR board output image |
-| `report.pdf` | Final report including Boolean logic, K-map, VHDL, simulation, and implementation |
 
 ---
 
@@ -47,8 +46,10 @@ The design was simulated using **Vivado’s built-in simulator**.
 - Each input was applied with a **20 ns delay**.  
 - **Outputs matched the expected hexadecimal patterns** for all test cases.
 
-### Example Simulation Waveform
-*(Add your waveform image below)*  
+Below is the simulation waveform showing the output behavior for all input combinations (0–F):
+
+![Simulation Waveform](docs/waveform.png)
+
 
 ---
 
@@ -62,8 +63,7 @@ The design was simulated using **Vivado’s built-in simulator**.
 - **7-Segment Outputs:** `sevseg[6:0] → segments a–g`  
 - **Enable Signals:** `EN[7:0] → control active display`
 
-### 🖼️ Annotated Board Result
-*(Add your annotated Nexys4 image below)*  
+
 
 ---
 
